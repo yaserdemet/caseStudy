@@ -1,0 +1,16 @@
+$bgColor : #F4E3DF;
+$textColor :  #2E2A2B;
+
+@mixin footerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin footerCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

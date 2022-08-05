@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import React, { useEffect } from "react"
+import Home from "./pages/Home";
+import loadingGif from "./utils/loading.gif"
+
+
 
 function App() {
+  // const [loading , setLoading] = React.useState(true)
+ 
+ 
+// useEffect(() => {
+//    setTimeout(() => {
+// setLoading(false)
+//    },2000)
+// } ,[])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {
+    // loading ?  <img style={{width : "600px"}}  src={loadingGif} alt="sluggish" /> : 
+     }
+    <Home />   
     </div>
   );
 }

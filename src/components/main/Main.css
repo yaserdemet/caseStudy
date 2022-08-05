@@ -1,0 +1,153 @@
+.main-container {
+  width: 100%;
+  height: 700px;
+  left: 0px;
+
+  background-image: url("../../utils/main.png.png");
+  /* background: linear-gradient(
+      0deg,
+      rgba(46, 53, 64, 0.1),
+      rgba(46, 53, 64, 0.1)
+    );
+    */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container__first-header {
+  position: absolute;
+  width: 531px;
+  height: 72px;
+  left: 90px;
+  top: 120px;
+  font-family: "Visuelt Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.main-container__second-header {
+  position: absolute;
+  width: 307px;
+  height: 72px;
+  left: 90px;
+  top: 197px;
+  font-family: "Visuelt Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 100%;
+
+  color: #ffffff;
+}
+
+.green-box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 90px;
+  top: 90px;
+
+  background: #2d6a4f;
+}
+
+.search-container {
+  position: absolute;
+  width: 760px;
+  height: 178px;
+  left: 90px;
+  top: 333px;
+}
+
+.search-container__header {
+  position: absolute;
+  width: 760px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  background: #f7785d;
+  color: white;
+  text-align: start;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.search-container__box {
+  position: absolute;
+  width: 760px;
+  height: 128px;
+  left: 0px;
+  top: 50px;
+  background: #f3f4f2;
+}
+
+.input-box {
+  position: absolute;
+  width: 245px;
+  height: 48px;
+  left: 40px;
+  top: 40px;
+}
+.input-box input {
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid rgb(190, 179, 179);
+  background-color: inherit;
+}
+
+.select-box {
+  /* width: 30%; */
+  background-color: inherit;
+  position: absolute;
+  width: 245px;
+  height: 48px;
+  left: 305px;
+  top: 40px;
+}
+
+.form-select {
+  background-color: inherit !important;
+  border: none;
+}
+/* .label {
+  position: absolute;
+  width: 26px;
+  height: 12px;
+  left: 0px;
+  top: 0px;
+  font-family: "Visuelt Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #747b86;
+} */
+
+.bttn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  position: absolute;
+  width: 150px;
+  height: 48px;
+  left: 570px;
+  top: 40px;
+  border: 1px solid #f7785d;
+  border-radius: 60px;
+}
+
+@media screen and (max-width: 857px) {
+
+.search-container {
+  position: relative
+}
+
+}

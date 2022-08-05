@@ -1,0 +1,32 @@
+.carousel {
+  /* background-image:  */
+  /* position: absolute; */
+  width: 100%;
+  height: 300px;
+  margin-top: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(
+      90deg,
+      rgba(46, 42, 43, 0.8) 0%,
+      rgba(46, 42, 43, 0) 100%
+    ),
+    url("../../utils/lisbon2.webp");
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  text-align: left;
+  margin-top: 6rem;
+  color: white;
+  margin-left: 15rem;
+  font-family: Visuelt Pro;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 50px;
+  letter-spacing: 0em;
+}

@@ -1,0 +1,25 @@
+@mixin forFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+@mixin basicFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+$bgColor : #2E2A2B;
+$btnColor : #F7785D;
+$btnRadius : 60px;
+$textColor : #FFFFFF;
+$fSize : 42px;
+$inputBgColor : inherit;
+
+$mA : auto;

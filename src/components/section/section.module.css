@@ -1,0 +1,102 @@
+.container {
+  /* background-color: red; */
+  margin-top: 5rem;
+}
+.headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fotos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.outer {
+  background-image: url("../../utils/foto.png");
+  width: 400px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  text-align: left;
+  margin-top: 2rem;
+  color: white;
+}
+
+.outer2 {
+  background-image: url("../../utils/foto3.png");
+  width: 400px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bottom-text {
+  position: absolute;
+  width: 400px;
+  height: 224px;
+  left: 0px;
+  bottom: 0;
+  color: white;
+  background: #2e2a2b;
+}
+
+.para1 {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.outer2__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  /* position: absolute; */
+  width: 150px;
+  height: 48px;
+  left: 570px;
+  top: 40px;
+  border: 1px solid #f7785d;
+  border-radius: 60px;
+  margin-left: 1rem;
+  background-color: inherit;
+  color: white;
+}
+
+.outer3 {
+  background-image: url("../../utils/foto4.png");
+  width: 400px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section-foto1 {
+  width: 430px;
+  height: 600px;
+  left: 120px;
+  top: 940px;
+}
+
+@media screen and (max-width: 768px) {
+  .headers {
+    flex-direction: column;
+  }
+}

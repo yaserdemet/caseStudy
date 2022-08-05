@@ -1,0 +1,35 @@
+@import "./variable";
+
+.dark-footer {
+    background-color: $bgColor;
+    width: 90%;
+    margin: auto;
+    color: $textColor;
+    @include darkFooter;
+    padding: 3rem 5rem;
+    gap: 3rem;
+
+    &  a {
+        text-decoration: underline;
+        color: $textColor;
+        font-size: 14px;
+        margin-top: 4rem;
+    }
+
+    .link {
+        margin-top: 2rem;
+    }
+
+    & h3 {
+            font-size: 24px;
+            margin-bottom: 2rem;
+    }
+
+    & li {
+        font-size: 14px;
+    }
+}
+
+.dark-footer__section{
+    text-align: left;
+}

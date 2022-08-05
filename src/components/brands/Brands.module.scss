@@ -1,0 +1,41 @@
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5rem;
+    width: 90%;
+    margin: 2rem auto;
+
+    & h3 {
+        width: 249px;
+      
+    }
+   & .brand-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+   }
+   .brand-photos-containers {
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+}
+
+@media  screen and (max-width : 720px) {
+    
+    aside {
+        flex-direction: column;
+    }
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    // .brand-photos-containers img{
+    //     width: 40px;
+    // }
+
+}

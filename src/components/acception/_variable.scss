@@ -1,0 +1,11 @@
+$buttonColor: #f7785d;
+$border: 1px solid #f7785d;
+$radius: 60px;
+$textColor :  #2E2A2B;;
+
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
