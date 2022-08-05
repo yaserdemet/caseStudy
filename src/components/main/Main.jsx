@@ -1,8 +1,15 @@
 import React from "react";
 import "./Main.scss";
 import { IoIosSearch } from "react-icons/io";
+import { useState } from "react";
 
 const Main = () => {
+const [search, setSearch] = useState("Apartment");
+
+const handleChange = (e) => {
+  setSearch(e.target.value);
+}
+
   return (
     <main className="main-container">
       <div className="second-container">
@@ -24,8 +31,9 @@ const Main = () => {
               <select
                 className="form-select form-select-md"
                 aria-label=".form-select-sm example"
+                onChange={handleChange}
               >
-                <option>Type : Apartment</option>
+                <option value="apartment">Type : Apartment</option>
                 <option value="1">Suit</option>
                 <option value="2">Hotel</option>
                 <option value="3">Motel</option>

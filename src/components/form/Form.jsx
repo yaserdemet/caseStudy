@@ -1,11 +1,49 @@
 import React from "react";
 import formStyle from "./Form.module.scss";
 import { RiRecycleFill } from "react-icons/ri";
-
+import { useState } from "react";
+import { toast } from "react-toastify";
+import { toastWarnNotify } from "../../helper/ToastNotify";
 const Form = () => {
+  const [info, setInfo] = useState({
+    name: "",
+    surname: "",
+    email: "",
+    phone: "",
+    message: "",
+    country: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!info.name || !info.surname) {
+      toastWarnNotify("Please fill in all the related fields");
+    }
+    setInfo({
+      name: "",
+      surname: "",
+      email: "",
+      phone: "",
+      message: "",
+      country: "",
+    });
+  };
+
+  const handleChange = (e) => {
+    setInfo({
+      ...info,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
     <div>
-      <form action="#" target="blank" className={formStyle["form-container"]}>
+      <form
+        action="#"
+        target="blank"
+        onSubmit={handleSubmit}
+        className={formStyle["form-container"]}
+      >
         <div className={formStyle["left-section"]}>
           <h2>Get in Touch</h2>
 
@@ -13,25 +51,45 @@ const Form = () => {
             <label htmlFor="name">Name</label>
           </div>
           <div>
-            <input type="text" id="name" defaultValue={"John"} />
+            <input
+              type="text"
+              id="name"
+              defaultValue={"John"}
+              onChange={handleChange}
+            />
           </div>
           <div className={formStyle["lab"]}>
             <label htmlFor="surnmame">Surname</label>
           </div>
           <div className={formStyle["lab"]}>
-            <input type="text" id="surname" defaultValue={"Dorethy"} />
+            <input
+              type="text"
+              id="surname"
+              defaultValue={"Dorethy"}
+              onChange={handleChange}
+            />
           </div>
           <div className={formStyle["lab"]}>
             <label htmlFor="mail">Mail</label>
           </div>
           <div>
-            <input type="mail" id="mail" defaultValue={"john@gmail.com"} />
+            <input
+              type="mail"
+              id="mail"
+              defaultValue={"john@gmail.com"}
+              onChange={handleChange}
+            />
           </div>
           <div className={formStyle["lab"]}>
             <label htmlFor="phone">Phone</label>
           </div>
           <div>
-            <input type="text" id="phone" defaultValue={"+32 478 789 789"} />
+            <input
+              type="text"
+              id="phone"
+              defaultValue={"+32 478 789 789"}
+              onChange={handleChange}
+            />
           </div>
         </div>
 
@@ -43,7 +101,12 @@ const Form = () => {
             <label htmlFor="country">Country</label>
           </div>
           <div className={formStyle["lab"]}>
-            <input type="text" id="country" defaultValue={"England"} />
+            <input
+              type="text"
+              id="country"
+              defaultValue={"England"}
+              onChange={handleChange}
+            />
           </div>
 
           <div className={formStyle["lab"]}>
@@ -51,7 +114,7 @@ const Form = () => {
           </div>
 
           <div className={formStyle["lab"]}>
-            <select name="cars" id="cars">
+            <select className="cars" id="cars" onChange={handleChange}>
               <option value="asia">Asia</option>
               <option value="europa">Europa</option>
               <option value="america">America</option>
@@ -70,6 +133,7 @@ const Form = () => {
               cols=""
               rows="5"
               placeholder="Enter message here."
+              onChange={handleChange}
             ></textarea>
           </div>
 
@@ -80,14 +144,14 @@ const Form = () => {
                 type="checkbox"
                 value=""
                 id="flexCheckDefault"
-               
+                onChange={handleChange}
               />
-              <label className="form-check-label" for="flexCheckDefault" >
+              <label className="form-check-label" for="flexCheckDefault">
                 I m not robot
               </label>
             </div>
             <div>
-                <RiRecycleFill  size={30}/>
+              <RiRecycleFill size={30} />
             </div>
             <div>
               <button>Send</button>

@@ -5,9 +5,20 @@ import { IoIosSearch } from "react-icons/io";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { useRef } from "react";
 import { useEffect } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const searchRef = useRef(null);
+  const [search, setSearch] = useState("");
+  const [language, setLanguage] = useState("eng");
+
+  const handleLanguage = (e) => {
+    setLanguage(e.target.value);
+  };
+
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  };
 
   useEffect(() => {
     searchRef.current.focus();
@@ -33,7 +44,7 @@ const Navbar = () => {
             {" "}
             Search <IoIosSearch />
           </label>
-          <input type="search" ref={searchRef} />
+          <input type="search" ref={searchRef} onChange={handleChange} />
         </div>
 
         <div>
@@ -48,7 +59,10 @@ const Navbar = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             ></button>
-            <ul className="dropdown-menu dropdown-menu-white">
+            <ul
+              className="dropdown-menu dropdown-menu-white"
+              onChange={handleLanguage}
+            >
               <li>
                 <a className="dropdown-item active" href="#">
                   EN

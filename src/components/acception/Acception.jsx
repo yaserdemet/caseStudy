@@ -1,8 +1,18 @@
 import React from "react";
 import styledAcc from "./acception.module.scss";
 import { BsArrowRight } from "react-icons/bs";
-
+import { useState } from "react";
 const Acception = () => {
+
+  const [mail , setMail] = useState("");
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    setMail(e.target.value);
+    console.log(mail);
+  }
+
+
   return (
   <div className={styledAcc["x"]}>
     <section className={styledAcc["acc-container"]}>
@@ -12,7 +22,7 @@ const Acception = () => {
           <h3>property investment process</h3>
         </div>
 
-        <div className={styledAcc["input-sec"]}>
+        <form className={styledAcc["input-sec"]}>
           <div>
             {" "}
             <label htmlFor="">Email</label>
@@ -20,7 +30,7 @@ const Acception = () => {
           <div>
             <input type="text" />
           </div>
-        </div>
+        </form>
 
         <div className={styledAcc["radio-group"]}>
           <div className={styledAcc["form-check"]}>
@@ -37,7 +47,7 @@ const Acception = () => {
                 I'm accepting things
               </label>
             </div>
-            <button>
+            <button onClick={handleClick}>
               Subscribe <BsArrowRight />{" "}
             </button>
           </div>

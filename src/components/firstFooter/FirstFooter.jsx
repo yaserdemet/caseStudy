@@ -5,6 +5,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
+import { data2 } from "../../utils/data";
 
 const FirstFooter = () => {
   return (
@@ -14,11 +15,10 @@ const FirstFooter = () => {
       <div className="footer__first-section">
         <ul>
           <li className="logo-side">
-          
-              <img src={brand} alt="brand" />
-          
+            <img src={brand} alt="brand" />
+
             <li className="footer__phone-mail">
-              <li style={{textAlign : "left"}}>+44 20 8133 0324</li>
+              <li style={{ textAlign: "left" }}>+44 20 8133 0324</li>
               <li>
                 {" "}
                 <a href="mailto:info@getproperties.com">
@@ -48,47 +48,23 @@ const FirstFooter = () => {
       {/* second sectiion */}
 
       <aside className="aside-section">
-        <div>
-          <h5>Properties</h5>
-          <ul>
-            <li>Wise Review</li>
-            <li>Open Wise Account</li>
-            <li>N26</li>
-            <li>E Residency Countries</li>
-            <li>Wise Review</li>
-          </ul>
-        </div>
+        {data2.map((item, index) => {
+          
+          const { header, line1, line2, line3, line4, line5 } = item;
 
-        <div>
-          <h5>Articles</h5>
-          <ul>
-            <li>E-Residency Countries</li>
-            <li>Wise Review</li>
-            <li>N26</li>
-            <li>E Residency Countries</li>
-            <li>Open Wise Account</li>
-          </ul>
-        </div>
-        <div>
-          <h5>Calculators</h5>
-          <ul>
-            <li>Wise Review</li>
-            <li>Open Wise Account</li>
-            <li>N26</li>
-            <li>E Residency Countries</li>
-            <li>Wise Review</li>
-          </ul>
-        </div>
-        <div>
-          <h5>About</h5>
-          <ul>
-            <li>Wise Review</li>
-            <li>Open Wise Account</li>
-            <li>N26</li>
-            <li>E Residency Countries</li>
-            <li>Wise Review</li>
-          </ul>
-        </div>
+          return (
+            <div key={index}>
+              <h5>{header}</h5>
+              <ul>
+                <li>{line1}</li>
+                <li>{line2}</li>
+                <li>{line3}</li>
+                <li>{line4}</li>
+                <li>{line5}</li>
+              </ul>
+            </div>
+          );
+        })}
       </aside>
     </footer>
   );
