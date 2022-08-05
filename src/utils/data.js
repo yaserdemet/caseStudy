@@ -41,6 +41,7 @@ export const data2 = [
     line3: "N26",
     line4: "E Residency Countrie",
     line5: "Wise Review",
+    id : 1,
   },
   {
     header: "Article",
@@ -49,6 +50,7 @@ export const data2 = [
     line3: "N26",
     line4: "E Residency Countrie",
     line5: "Wise Review",
+    id : 2,
   },
   {
     header: "Calculator",
@@ -57,6 +59,7 @@ export const data2 = [
     line3: "N26",
     line4: "E Residency Countrie",
     line5: "Wise Review",
+    id : 3,
   },
   {
     header: "About",
@@ -65,5 +68,6 @@ export const data2 = [
     line3: "N26",
     line4: "E Residency Countrie",
     line5: "Wise Review",
+    id : 4,
   },
 ];

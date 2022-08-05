@@ -15,7 +15,7 @@ import LastFooter from "../components/lastFooter/LastFooter";
 import MainFooter from "../components/mainFooter/MainFooter";
 const Home = () => {
   useEffect(() => {
-    toastSuccessNotify("🌍 Welcome to Our Website");
+    toastSuccessNotify(" Welcome to Our Website 🌍");
   }, []);
   return (
     <div>

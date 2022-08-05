@@ -58,10 +58,18 @@ aside li {
   }
 }
 
+h5 .dropIcon {
+  display: none;
+}
+
+.toggleIcon {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .footer__first-section {
     width: 70%;
-   @include footerCol;
+    @include footerCol;
   }
 
   .footer1 {
@@ -69,11 +77,31 @@ aside li {
   }
 }
 
-@media (max-width: 720px) {
+$width: 720px;
+
+@media (max-width: $width) {
+
+    // ! yukarı ok ikonu için tam ekranda display i none 
+    // ! 720 ekranda ise visable olsun.
+  .toggleIcon {
+    display : inline;
+  }
+
+
+// ? ul kısmı için onClick oldugunda bu classı veriyor. ve display i none yapıyor.
+  .toggleClass {
+    display: none;
+  }
+
   .aside-section {
     gap: 3rem;
   }
   .footer1 {
     width: 70%;
   }
+
+  h5 .dropIcon {
+    display: inline;
+  }
 }
+

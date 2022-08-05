@@ -7,7 +7,14 @@ import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { data2 } from "../../utils/data";
 
+import ShowList from "./ShowList";
+
 const FirstFooter = () => {
+
+ 
+
+   
+
   return (
     <footer className="footer1">
       {/* first sectiion */}
@@ -49,20 +56,11 @@ const FirstFooter = () => {
 
       <aside className="aside-section">
         {data2.map((item, index) => {
-          
-          const { header, line1, line2, line3, line4, line5 } = item;
+
+       
 
           return (
-            <div key={index}>
-              <h5>{header}</h5>
-              <ul>
-                <li>{line1}</li>
-                <li>{line2}</li>
-                <li>{line3}</li>
-                <li>{line4}</li>
-                <li>{line5}</li>
-              </ul>
-            </div>
+            <ShowList item={item} key={index} />
           );
         })}
       </aside>
