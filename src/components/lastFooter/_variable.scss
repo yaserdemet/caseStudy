@@ -1,9 +1,16 @@
 $bgColor :  #2E2A2B;
 $textColor : #FFFFFF;
 
-@mixin darkFooter {
+@mixin darkFooter() {
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-direction: row;
+     flex-direction: row ;
+}
+
+@mixin darkFooterCol {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
 }

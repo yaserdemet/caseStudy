@@ -1,4 +1,5 @@
 @import "./helper/_reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Share&family=Signika+Negative&display=swap');
 
 body {
   margin: 0;

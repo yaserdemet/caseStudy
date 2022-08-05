@@ -33,3 +33,15 @@
 .dark-footer__section{
     text-align: left;
 }
+
+@media (max-width : 1024px){
+
+    .dark-footer{
+        @include darkFooterCol;
+        width: 70%;
+
+        & .dark-footer__section {
+            border-bottom: 1px solid $textColor;
+        }
+    }
+}

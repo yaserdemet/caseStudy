@@ -12,6 +12,7 @@ import Brands from "../components/brands/Brands";
 import Acception from "../components/acception/Acception";
 import FirstFooter from "../components/firstFooter/FirstFooter";
 import LastFooter from "../components/lastFooter/LastFooter";
+import MainFooter from "../components/mainFooter/MainFooter";
 const Home = () => {
   useEffect(() => {
     toastSuccessNotify("🌍 Welcome to Our Website");
@@ -30,6 +31,7 @@ const Home = () => {
       <Acception />
       <FirstFooter />
       <LastFooter />
+      <MainFooter />
     </div>
   );
 };
