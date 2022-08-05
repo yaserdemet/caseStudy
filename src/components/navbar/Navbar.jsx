@@ -3,8 +3,16 @@ import NavbarLogo from "../../utils/Component 6.png";
 import "./navbar.scss";
 import { IoIosSearch } from "react-icons/io";
 import { MdOutlineArrowDropDown } from "react-icons/md";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 const Navbar = () => {
+  const searchRef = useRef(null);
+
+  useEffect(() => {
+    searchRef.current.focus();
+  }, []);
+
   return (
     <nav className="navbar1">
       <div className="navbar__first-section ">
@@ -21,8 +29,11 @@ const Navbar = () => {
 
       <div className="navbar__second-section">
         <div>
-          <label htmlFor=""> Search <IoIosSearch /></label>
-          <input type="search" />  
+          <label htmlFor="">
+            {" "}
+            Search <IoIosSearch />
+          </label>
+          <input type="search" ref={searchRef} />
         </div>
 
         <div>
@@ -30,15 +41,6 @@ const Navbar = () => {
         </div>
 
         <div className="selected">
-          {/* <select
-                className="form-select form-select-sm"
-                aria-label=".form-select-sm example"
-              >
-                <option selected>En</option>
-                <option value="1">Tr</option>
-          
-          </select> */}
-
           <div className="dropdown">
             <button
               className="btn btn-white dropdown-toggle"
@@ -60,7 +62,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-{/* 
+        {/* 
         <li
           className="navbar-toggler d-lg-none"
           type="button"

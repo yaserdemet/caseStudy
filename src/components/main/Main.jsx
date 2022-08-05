@@ -1,5 +1,5 @@
 import React from "react";
-import "./Main.css";
+import "./Main.scss";
 import { IoIosSearch } from "react-icons/io";
 
 const Main = () => {
@@ -20,21 +20,19 @@ const Main = () => {
             </div>
 
             <div className="select-box">
-                {/* <label htmlFor="label">Type</label> */}
+              {/* <label htmlFor="label">Type</label> */}
               <select
                 className="form-select form-select-md"
                 aria-label=".form-select-sm example"
               >
-                <option selected>Type : Apartment</option>
+                <option>Type : Apartment</option>
                 <option value="1">Suit</option>
                 <option value="2">Hotel</option>
                 <option value="3">Motel</option>
               </select>
             </div>
-            <div >
-                <button  className="bttn">
-                    Search
-                </button>
+            <div>
+              <button className="bttn">Search</button>
             </div>
           </div>
         </div>

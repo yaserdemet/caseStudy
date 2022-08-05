@@ -52,10 +52,10 @@ const Form = () => {
 
           <div className={formStyle["lab"]}>
             <select name="cars" id="cars">
-              <option value="volvo">Asia</option>
-              <option value="saab" selected>Europa</option>
-              <option value="mercedes">America</option>
-              <option value="audi">Africa</option>
+              <option value="asia">Asia</option>
+              <option value="europa">Europa</option>
+              <option value="america">America</option>
+              <option value="africa">Africa</option>
             </select>
           </div>
 
@@ -74,13 +74,13 @@ const Form = () => {
           </div>
 
           <div className={formStyle["checkbox"]}>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                className="form-check-input"
+                className="form-check-input bg-white"
                 type="checkbox"
                 value=""
                 id="flexCheckDefault"
-                checked
+               
               />
               <label className="form-check-label" for="flexCheckDefault" >
                 I m not robot

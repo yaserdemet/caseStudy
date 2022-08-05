@@ -33,7 +33,7 @@ const Acception = () => {
              
                 
               />
-              <label class="form-check-label" htmlFor="flexCheckDefault">
+              <label className="form-check-label" htmlFor="flexCheckDefault">
                 I'm accepting things
               </label>
             </div>

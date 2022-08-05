@@ -21,7 +21,7 @@ const Card = () => {
       </p>
       <div className={styledCard["main-card"]}>
         <div className={styledCard["card"]}>
-          <img src={foto3} class="card-img-top" alt="..." />
+          <img src={foto3} className="card-img-top" alt="..." />
           <div className={styledCard["card-body"]}>
             <div className={styledCard["done"]}>
             <p>Article Category</p>
@@ -75,7 +75,7 @@ const Card = () => {
           </div>
         </div>
         <div className={styledCard["card"]}>
-          <img src={foto3} class="card-img-top" alt="..." />
+          <img src={foto3} className="card-img-top" alt="..." />
           <div className={styledCard["card-body"]}>
           <div className={styledCard["done"]}>
             <p>Article Category</p>
