@@ -1,6 +1,6 @@
 import React from "react";
 import NavbarLogo from "../../utils/Component 6.png";
-import "./navbar.css";
+import "./navbar.scss";
 import { IoIosSearch } from "react-icons/io";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 
@@ -21,28 +21,49 @@ const Navbar = () => {
 
       <div className="navbar__second-section">
         <div>
-          Search <IoIosSearch />
+          <label htmlFor=""> Search <IoIosSearch /></label>
+          <input type="search" />  
         </div>
 
         <div>
-          <button className="btn">Say Hello</button>
+          <button className="btnNormal">Say Hello</button>
         </div>
 
         <div className="selected">
-        <select
+          {/* <select
                 className="form-select form-select-sm"
                 aria-label=".form-select-sm example"
               >
                 <option selected>En</option>
                 <option value="1">Tr</option>
           
-          </select>
-        </div>
+          </select> */}
 
+          <div className="dropdown">
+            <button
+              className="btn btn-white dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
+            <ul className="dropdown-menu dropdown-menu-white">
+              <li>
+                <a className="dropdown-item active" href="#">
+                  EN
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="#">
+                  TR
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+{/* 
         <li
           className="navbar-toggler d-lg-none"
           type="button"
-        
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
@@ -50,7 +71,7 @@ const Navbar = () => {
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </li>
+        </li> */}
       </div>
     </nav>
   );

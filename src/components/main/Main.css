@@ -98,6 +98,7 @@
   border: none;
   border-bottom: 1px solid rgb(190, 179, 179);
   background-color: inherit;
+  outline: none;
 }
 
 .select-box {
@@ -114,19 +115,6 @@
   background-color: inherit !important;
   border: none;
 }
-/* .label {
-  position: absolute;
-  width: 26px;
-  height: 12px;
-  left: 0px;
-  top: 0px;
-  font-family: "Visuelt Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 100%;
-  color: #747b86;
-} */
 
 .bttn {
   display: flex;

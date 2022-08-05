@@ -7,22 +7,22 @@ import loadingGif from "./utils/loading.gif"
 
 
 function App() {
-  // const [loading , setLoading] = React.useState(true)
+  const [loading , setLoading] = React.useState(true)
  
  
-// useEffect(() => {
-//    setTimeout(() => {
-// setLoading(false)
-//    },2000)
-// } ,[])
+useEffect(() => {
+   setTimeout(() => {
+setLoading(false)
+   },2000)
+} ,[])
 
 
   return (
     <div className="App">
      {
-    // loading ?  <img style={{width : "600px"}}  src={loadingGif} alt="sluggish" /> : 
+    loading ?  <img style={{width : "600px"}}  src={loadingGif} alt="sluggish" /> : <Home />
      }
-    <Home />   
+ 
     </div>
   );
 }

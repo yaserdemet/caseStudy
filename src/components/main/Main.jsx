@@ -22,7 +22,7 @@ const Main = () => {
             <div className="select-box">
                 {/* <label htmlFor="label">Type</label> */}
               <select
-                className="form-select form-select-sm"
+                className="form-select form-select-md"
                 aria-label=".form-select-sm example"
               >
                 <option selected>Type : Apartment</option>

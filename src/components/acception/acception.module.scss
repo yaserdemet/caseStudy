@@ -13,6 +13,7 @@
   & input {
     border: none;
     border-bottom: 1px solid grey;
+    outline: none;
   }
 
   & label {
@@ -75,6 +76,14 @@
   width: 20%;
 }
 @media (max-width: 720px) {
+  .acc-container {
+    background-color: $bgQuery;
+
+    & input {
+      background-color: $bgQuery;
+      outline: none;
+    }
+  }
 
   h3 {
     font-size: 1.2rem;
