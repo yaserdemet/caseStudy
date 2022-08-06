@@ -1,7 +1,7 @@
 
 ![Animation](https://user-images.githubusercontent.com/99739515/183224785-dfa86a85-eac2-42c8-80ae-95c258f3586b.gif)
 
-
+[👉click here to see page](https://case-study-blond.vercel.app)
 
 ### In this project, i have used;
 
