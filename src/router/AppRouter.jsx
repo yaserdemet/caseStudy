@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Details from "./components/bottom-card/Details";
-import Detail from "./pages/Detail";
-import Home from "./pages/Home";
+import Details from "../components/bottom-card/Details";
+// import Detail from "../pages/Detail";
+import Home from "../pages/Home";
 const AppRouter = () => {
   return (
     <div>

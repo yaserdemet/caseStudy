@@ -3,7 +3,7 @@ import "./App.css";
 import React, { useEffect } from "react"
 import Home from "./pages/Home";
 import loadingGif from "./utils/loading.gif"
-import AppRouter from "./AppRouter";
+import AppRouter from "./router/AppRouter";
 
 
 

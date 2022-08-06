@@ -6,28 +6,22 @@ import MainFooter from "../mainFooter/MainFooter";
 const Details = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const img = location.state;
-  const explanation = location.state;
+  const { img , explanation} = location.state;
+ console.log(img, explanation);
 
   return (
     <div className="d-flex flex-column  justify-content-center align-items-center mt-4">
       <div className="card border border-dark" style={{ width: "20rem" }}>
-        <img src={img} class="card-img-top" alt="..." />
+        <img src={img} className="card-img-top" alt="..." />
         <div className="card-body bg-dark text-warning">
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          {
+            explanation
+          }
           </p>
         </div>
       </div>
-      <p>
-        {/* {
-            
-                
-         explanation
-        } */}
-      </p>
-      <button className="btn btn-dark text-warning" onClick={() => navigate(-1)} style={{ width: "20rem" }}>
+      <button className="btn btn-dark text-warning mt-4" onClick={() => navigate(-1)} style={{ width: "20rem" }}>
         {" "}
         GO BACK
       </button>

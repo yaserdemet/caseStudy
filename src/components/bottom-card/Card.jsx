@@ -50,7 +50,10 @@ const Card = () => {
               explanation
                }
               </p>
-              <button href="#" className={styledCard["btn"]} onClick={() => navigate(`details/${id}`,{ state : img })}>
+              <button href="#" className={styledCard["btn"]} onClick={() => navigate(`details/${id}`,{ state : {
+                img , 
+                explanation
+              }})}>
                 Read More
               </button> 
             </div>
