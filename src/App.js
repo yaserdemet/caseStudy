@@ -3,6 +3,7 @@ import "./App.css";
 import React, { useEffect } from "react"
 import Home from "./pages/Home";
 import loadingGif from "./utils/loading.gif"
+import AppRouter from "./AppRouter";
 
 
 
@@ -20,7 +21,7 @@ setLoading(false)
   return (
     <div className="App">
      {
-    loading ?  <img style={{width : "600px"}}  src={loadingGif} alt="sluggish" /> : <Home />
+    loading ?  <img style={{width : "600px"}}  src={loadingGif} alt="sluggish" /> : <AppRouter />
      }
  
     </div>

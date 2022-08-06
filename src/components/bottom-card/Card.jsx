@@ -3,9 +3,10 @@ import styledCard from "./card.module.css";
 import { BsArrowRight } from "react-icons/bs";
 import foto3 from "../../utils/foto3.png";
 import { data } from "../../utils/data";
-
+import { useNavigate } from "react-router-dom";
 const Card = () => {
-  
+
+  const navigate = useNavigate()
 
   return (
     <section className={styledCard["container"]}>
@@ -49,9 +50,9 @@ const Card = () => {
               explanation
                }
               </p>
-              <button href="#" className={styledCard["btn"]}>
+              <button href="#" className={styledCard["btn"]} onClick={() => navigate(`details/${id}`,{ state : img })}>
                 Read More
-              </button>
+              </button> 
             </div>
           </div>
           )
