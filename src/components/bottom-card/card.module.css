@@ -44,6 +44,15 @@ section p {
   justify-content: center;
 }
 
+/* .dot{
+  height: 300px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+ belirli bir uzunlukta texti kısaltır.
+} */
+
 .card img {
   width: 270px;
 }
