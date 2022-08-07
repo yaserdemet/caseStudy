@@ -80,6 +80,12 @@ span {
   margin-bottom: 3rem;
 }
 
+.moble img{
+  
+  width: 100%;
+
+}
+
 
 @media screen and (max-width: 1440px) {
   .container {

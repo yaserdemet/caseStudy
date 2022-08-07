@@ -65,7 +65,7 @@ const Article = () => {
     
       </div>
 
-      <div>
+      <div className={styledArticle["moble"]}>
         <img src={moble} alt="" />
       </div>
 
