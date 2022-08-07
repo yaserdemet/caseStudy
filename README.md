@@ -1,5 +1,6 @@
 
-![Animation](https://user-images.githubusercontent.com/99739515/183224785-dfa86a85-eac2-42c8-80ae-95c258f3586b.gif)
+
+![Animation](https://user-images.githubusercontent.com/99739515/183262882-8b897195-bc69-4cab-b511-e4e3d2637fb4.gif)
 
 [👉click here to see page](https://case-study-blond.vercel.app)
 
@@ -17,7 +18,9 @@
 
 📌 3rd Part Libraries ( Toastify )
 
-📌 Hooks (useState, useEffect, useRef)
+📌 Hooks (useState, useEffect, useRef, useNavigate , useLocation)
+
+📌 React Router DOM
 
 📌 Deployment with Vercel and Netlify
 
