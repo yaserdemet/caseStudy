@@ -26,7 +26,7 @@
 
 📌 To reduce boilerplate code, stayed information in JSON file.
 
-📌 Js iteration method map.
+📌 Js iteration method map ( map and filter )
 
 Project aims to create a react scaleable page with Figma.
 
